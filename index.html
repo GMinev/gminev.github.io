@@ -65,9 +65,9 @@
 
   header { padding: 56px 0 32px; }
   .hero { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
-  .photo {
-    width: 128px; height: 128px; border-radius: 50%;
-    object-fit: cover; background: var(--accent-soft);
+    .photo {
+    width: 180px; height: 180px; border-radius: 50%;
+    object-fit: cover; object-position: 50% 25%; background: var(--accent-soft);
     border: 1px solid var(--line); flex-shrink: 0;
   }
   h1 {
@@ -118,10 +118,9 @@
   .rows { display: grid; gap: 10px; }
   .row { display: grid; grid-template-columns: 120px 1fr; gap: 16px; }
   .row .when { color: var(--muted); font-size: 14px; padding-top: 2px; }
-  @media (max-width: 520px) {
+    @media (max-width: 520px) {
+    .photo { width: 140px; height: 140px; }
     .row { grid-template-columns: 1fr; gap: 0; }
-    h1 { font-size: 32px; }
-  }
 
   .skip { position: absolute; left: -9999px; top: 8px; background: var(--accent); color: var(--bg); padding: 6px 12px; border-radius: 6px; z-index: 20; }
   .skip:focus { left: 16px; }
