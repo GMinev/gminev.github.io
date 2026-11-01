@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Georgi Minev</title>
+<meta property="og:title" content="Georgi Minev">
+<meta property="og:description" content="Media researcher and media manager. Assistant Professor at UNWE, Sofia, and Editor-in-Chief of Money.bg.">
+<meta property="og:type" content="profile">
+<meta name="description" content="Georgi Minev, media researcher and media manager. Assistant Professor at the University of National and World Economy (UNWE), Sofia. Research on business journalism, media economics, platforms and media literacy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1f2328;
+    --muted: #5b616b;
+    --line: #e4e1da;
+    --accent: #1d4e89;
+    --accent-soft: #e8eef6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171a;
+      --text: #e6e6e3;
+      --muted: #a1a6ad;
+      --line: #2c3036;
+      --accent: #8db4e8;
+      --accent-soft: #1f2a38;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15171a;
+    --text: #e6e6e3;
+    --muted: #a1a6ad;
+    --line: #2c3036;
+    --accent: #8db4e8;
+    --accent-soft: #1f2a38;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap {
+    display: flex; gap: 20px; overflow-x: auto;
+    padding-top: 12px; padding-bottom: 12px;
+    font-size: 14px; font-weight: 500; white-space: nowrap;
+  }
+  nav a { color: var(--muted); }
+  nav a:hover { color: var(--accent); text-decoration: none; }
+
+  header { padding: 56px 0 32px; }
+  .hero { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  .photo {
+    width: 128px; height: 128px; border-radius: 50%;
+    object-fit: cover; background: var(--accent-soft);
+    border: 1px solid var(--line); flex-shrink: 0;
+  }
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600; font-size: 38px; line-height: 1.15;
+    margin: 0 0 6px;
+  }
+  .role { color: var(--muted); margin: 0; }
+  .tagline { font-family: "Source Serif 4", Georgia, serif; font-style: italic; font-size: 19px; margin: 0 0 6px; }
+  .pillars { display: grid; gap: 16px; grid-template-columns: repeat(4, 1fr); margin: 18px 0 20px; }
+  @media (max-width: 720px) { .pillars { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 380px) { .pillars { grid-template-columns: 1fr; } }
+  .pillar { border-top: 2px solid var(--accent); padding-top: 10px; }
+  .pillar strong { display: block; margin-bottom: 4px; }
+  .pillar span { font-size: 14px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .links a {
+    font-size: 14px; padding: 4px 12px;
+    border: 1px solid var(--line); border-radius: 999px;
+  }
+  .links a:hover { background: var(--accent-soft); text-decoration: none; }
+
+  section { padding: 28px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600; font-size: 24px; margin: 0 0 14px;
+  }
+  h3 { font-size: 16px; font-weight: 600; margin: 22px 0 8px; }
+  p { margin: 0 0 12px; }
+
+  .strands { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin-top: 16px; }
+  @media (max-width: 520px) { .strands { grid-template-columns: 1fr; } }
+  .strand { background: var(--accent-soft); border-radius: 10px; padding: 14px 16px; }
+  .strand strong { display: block; margin-bottom: 4px; }
+  .strand span { font-size: 14px; color: var(--muted); }
+
+.project { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; }
+  .project h4 { font-family: "Source Serif 4", Georgia, serif; font-size: 19px; font-weight: 600; margin: 0 0 8px; line-height: 1.3; }
+  .project .note { font-size: 14px; color: var(--muted); margin: 0; }
+  .stage { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; margin-bottom: 10px; }
+  ul.pubs { list-style: none; padding: 0; margin: 0; }
+  ul.pubs li { padding: 8px 0 8px 14px; border-left: 2px solid var(--line); margin-bottom: 8px; }
+  ul.pubs li.selected { border-left-color: var(--accent); }
+  .me { font-weight: 600; }
+  .lang { color: var(--muted); font-size: 14px; }
+  .idx { font-size: 11px; font-weight: 600; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+
+  .rows { display: grid; gap: 10px; }
+  .row { display: grid; grid-template-columns: 120px 1fr; gap: 16px; }
+  .row .when { color: var(--muted); font-size: 14px; padding-top: 2px; }
+  @media (max-width: 520px) {
+    .row { grid-template-columns: 1fr; gap: 0; }
+    h1 { font-size: 32px; }
+  }
+
+  .skip { position: absolute; left: -9999px; top: 8px; background: var(--accent); color: var(--bg); padding: 6px 12px; border-radius: 6px; z-index: 20; }
+  .skip:focus { left: 16px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 18px; }
+  .keywords span { font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
+  .highlights { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin-top: 8px; }
+  @media (max-width: 520px) { .highlights { grid-template-columns: 1fr; } }
+  .hl { background: var(--accent-soft); border-radius: 10px; padding: 14px 16px; }
+  .hl .label { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 6px; }
+  .hl p { margin: 0; font-size: 15px; }
+  footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#media">Media</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="wrap" id="main">
+
+  <header id="about">
+    <div class="hero">
+      <!-- Upload your photo as photo.jpg to the repository. Until then the circle stays empty. -->
+      <img class="photo" src="photo.jpg" alt="Georgi Minev" onerror="this.style.display='none'">
+      <div>
+        <h1>Georgi Minev</h1>
+        <p class="tagline">Media researcher and media manager</p>
+        <p class="role">Assistant Professor, University of National and World Economy (UNWE), Sofia<br>Editor-in-Chief, Money.bg</p>
+        <div class="links">
+          <a class="js-mail" href="#contact">Email</a>
+          <a href="cv.pdf">CV (PDF)</a>
+          <a href="https://scholar.google.com/citations?user=ud_H9RwAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://orcid.org/0000-0002-6976-2578">ORCID</a>
+          <a href="https://www.linkedin.com/in/georgi-minev-ph-d-17307b13/">LinkedIn</a>
+          <a href="https://blogs.unwe.bg/gminev/">UNWE page</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <p>I work where media research and media practice meet. I am an Assistant Professor in the Department of Media and Public Communications at UNWE in Sofia and, since 2014, Editor-in-Chief of Money.bg, one of Bulgaria's leading business news sites. This combination is deliberate: it lets me study the changes in news and economic information while dealing with them every day as a media manager.</p>
+    <p>As a researcher, I look at how search engines, social platforms and generative AI are changing the way news and economic information reach the public, and what this means for the business of journalism, for its role as a trusted intermediary and for the skills audiences need. As an editor, I face the same questions in practice: where readers come from, how a newsroom earns its money and what keeps an audience's trust. I bring what I observe in practice into my research, and I take what research shows back into the newsroom.</p>
+    <div class="pillars">
+      <div class="pillar"><strong>Research</strong><span>Media economics, platforms and AI, business and international journalism, media and financial literacy</span></div>
+      <div class="pillar"><strong>Practice</strong><span>More than a decade leading a business newsroom through its digital transformation</span></div>
+      <div class="pillar"><strong>Teaching</strong><span>Courses that bring real newsroom decisions and audience data into the classroom</span></div>
+      <div class="pillar"><strong>International</strong><span>Experience in Germany and Switzerland, open to collaboration across Europe and beyond</span></div>
+    </div>
+    <p>My department holds the UNESCO Chair on Media and Information Literacy and Cultural Policies for Sustainable Development, which shapes my interest in how audiences learn to evaluate what they read.</p>
+    <div class="highlights">
+      <div class="hl"><span class="label">Latest article</span><p><a href="https://doi.org/10.46324/PMP2503337">Zero-clicks as a new paradigm in the media environment</a>, <em>Postmodernism Problems</em>, 2025</p></div>
+      <div class="hl"><span class="label">Forthcoming book</span><p><a href="#book"><em>Economic Journalism: Past and Perspectives</em></a>, UNWE Press</p></div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p>My research brings together four connected areas:</p>
+    <div class="strands">
+      <div class="strand"><strong>Media economics and platforms</strong><span>Zero-click search, AI-generated answers and the dependency of news publishers on platforms, especially in small markets.</span></div>
+      <div class="strand"><strong>Business and economic journalism</strong><span>The history, forms and digital transformation of business journalism, and how it is changing in a platform-based environment.</span></div>
+      <div class="strand"><strong>Media and financial literacy</strong><span>How audiences evaluate media content and economic information, and how media, information and financial literacy can be taught.</span></div>
+      <div class="strand"><strong>International journalism</strong><span>How global news brands, international news flows and platforms shape national journalism, seen from a small media market such as Bulgaria.</span></div>
+    </div>
+    <h3 id="book">Forthcoming book</h3>
+    <div class="project">
+      <span class="stage">UNWE Press, forthcoming</span>
+      <h4>Economic Journalism: Past and Perspectives</h4>
+      <p>The monograph builds on my doctoral research on business journalism in a convergent media environment. It draws a clear line between economic and business journalism, traces the history of economic journalism in Bulgaria through its successive stages and follows how digital forms, technologies and platforms have changed the way business news is produced, distributed and paid for.</p>
+      <p>The book is written in Bulgarian, with students and young journalists in mind. No new textbook on the subject has appeared in Bulgarian for about ten years, and the book will serve as a core resource for my course Media and Business.</p>
+    </div>
+    <h3>Current projects</h3>
+    <div class="project">
+      <span class="stage">Early stage</span>
+      <h4>After the Click: Traffic Decline and the Future of Bulgarian Online News</h4>
+      <p>For years, online news relied on a simple exchange: search engines and social platforms sent readers to news sites, and publishers turned that traffic into advertising revenue. That exchange is changing. Search engines increasingly answer questions directly, and AI tools offer ready-made summaries, so users often never open the original source.</p>
+      <p>This project looks at how the shift affects the Bulgarian news market, which is small and depends on advertising and on traffic from platforms. It traces the audiences of leading news websites over recent years and the routes by which readers reach them, and asks which revenue models could replace mass traffic. It also links media economics with media literacy. When journalism loses direct contact with its audience, it also loses the chance to explain where information comes from and why it can be trusted.</p>
+    </div>
+    <div class="project">
+      <span class="stage">Early stage</span>
+      <h4>The Zero-Click Generation? How Young People Get Information About Money</h4>
+      <p>Young people increasingly get answers where they first meet them: in a search result, from an AI chatbot or in a video by a content creator. This project asks whether the same is true for information about money, where the stakes are real and it can be hard to tell promotion from advice.</p>
+      <p>The study will compare how university students in Bulgaria judge the same financial claim when it comes from a news outlet, an AI tool or a content creator: how far they trust it, whether they would check it and whether they would open the source. A survey will be followed by focus groups. The project will also ask whether media literacy or financial literacy better explains these choices.</p>
+    </div>
+    <h3>Research interests</h3>
+    <p>Business and economic journalism · Digital media economics and business models · Platform dependency and the zero-click environment · Generative AI and search · International journalism and foreign media markets · Media, information and financial literacy</p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <h3>Journal articles</h3>
+    <ul class="pubs">
+      <li class="selected"><span class="me">Minev, G.</span> (2025). Zero-clicks as a new paradigm in the media environment: Transforming audience access and business models in the digital landscape. <em>Postmodernism Problems</em>, 15(3), 337–354. <a href="https://doi.org/10.46324/PMP2503337">doi:10.46324/PMP2503337</a> <span class="lang">[in Bulgarian]</span></li>
+      <li>Tsankova, S., Angova, S., Nikolova, M., Valchanov, I., Valkov, I., &amp; <span class="me">Minev, G.</span> (2023). The media literacy and the teachers. <em>Pedagogika-Pedagogy</em>, 95(3), 321–332. <a href="https://doi.org/10.53656/ped2023-3.03">doi:10.53656/ped2023-3.03</a> <span class="lang">[in Bulgarian]</span> <span class="idx">Web of Science</span></li>
+      <li>Tsankova, S., Angova, S., Nikolova, M., Valchanov, I., Valkov, I., <span class="me">Minev, G.</span>, &amp; Osikovski, M. (2022). Integrating media literacy training practices in secondary and higher education in Bulgaria. <em>Ikonomiceski i Socialni Alternativi</em>, (3), 103–119. <a href="https://doi.org/10.37075/ISA.2022.3.08">doi:10.37075/ISA.2022.3.08</a> <span class="lang">[in Bulgarian]</span></li>
+      <li>Tsankova, S., Angova, S., Nikolova, M., Valchanov, I., Valkov, I., &amp; <span class="me">Minev, G.</span> (2022). The evolution of media literacy in Bulgaria's formal and non-formal education. <em>Yearbook of UNWE</em>, (1), 101–115. <a href="https://doi.org/10.37075/YB.2022.1.05">doi:10.37075/YB.2022.1.05</a></li>
+      <li>Valkov, I., <span class="me">Minev, G.</span>, &amp; Lozanova, A. (2021). The hidden opportunities of university podcasts in Bulgaria and Europe. <em>Rhetoric and Communications</em>, (49), 52–79. <span class="lang">[in Bulgarian]</span></li>
+      <li><span class="me">Minev, G.</span> (2020). Economic journalism: History and digital trends. <em>Infrastructure &amp; Communications</em>, 9(14), 17–25. <span class="lang">[in Bulgarian]</span></li>
+      <li>Angova, S., Tsankova, S., Osikovski, M., Nikolova, M., Valchanov, I., Ruslanov, I., … <span class="me">Minev, G.</span> (2019). Mapping the new digital media content. <em>Ikonomiceski i Socialni Alternativi</em>, (3), 27–38. <span class="lang">[in Bulgarian]</span></li>
+    </ul>
+
+    <h3>Books</h3>
+    <ul class="pubs">
+      <li class="selected"><span class="me">Minev, G.</span> (forthcoming). <em>Economic Journalism: Past and Perspectives</em> [Monograph] <span class="lang">[in Bulgarian]</span>. Sofia: UNWE Press.</li>
+      <li>Tsankova, S., Angova, S., Nikolova, M., Valchanov, I., Valkov, I., <span class="me">Minev, G.</span>, &amp; Osikovski, M. (2022). <em>Media literacy</em> [Collective monograph]. Sofia: UNWE Press. <span class="lang">[in Bulgarian]</span></li>
+      <li>Angova, S., Tsankova, S., Osikovski, M., Nikolova, M., Valchanov, I., Kolarova, M., … <span class="me">Minev, G.</span>, &amp; Dimitrova, A. (2019). <em>Mapping digital media content: Practices for creating a new media narrative</em> [Collective monograph]. Sofia: UNWE Press. <span class="lang">[in Bulgarian]</span></li>
+    </ul>
+
+    <h3>Conference papers</h3>
+    <ul class="pubs">
+      <li><span class="me">Minev, G.</span> (2026). Media economy under AI pressure: Challenges and perspectives. In <em>Proceedings of the XX International Scientific Conference of Young Scientists</em>, Part I (pp. 733–739). Sofia: UNWE Press. <a href="https://doi.org/10.37075/ISCYS.2026.1.065">doi:10.37075/ISCYS.2026.1.065</a> <span class="lang">[in Bulgarian]</span></li>
+      <li><span class="me">Minev, G.</span> (2020). Ways of financing digital media: Challenges and perspectives. In <em>Proceedings of PhD Seminar No. 1: Research by PhD Candidates from the Department of Media and Public Communications</em> (pp. 25–37). Sofia: UNWE Press. <span class="lang">[in Bulgarian]</span></li>
+      <li><span class="me">Minev, G.</span> (2019). New technological solutions for media marketing communications. In <em>Infrastructure: Business and Communications</em> (pp. 83–91). Sofia: UNWE Press. <span class="lang">[in Bulgarian]</span></li>
+      <li><span class="me">Minev, G.</span> (2019). Sources of financing media organizations in a digital environment. In B. Zlatanov (Ed.), <em>Media and Journalism: Professional Standards Between Power and Money</em> (pp. 160–166). Sofia: Sofia University "St. Kliment Ohridski". <span class="lang">[in Bulgarian]</span></li>
+      <li><span class="me">Minev, G.</span> (2018). Journalism and mobile devices: Tools for reaching the audience. In <em>Media Environment, Public and Strategic Communication</em> (pp. 356–363). Sofia: UNWE Press. <span class="lang">[in Bulgarian]</span></li>
+      <li><span class="me">Minev, G.</span> (2018). The role of Google in the creation, distribution, and revenue of media content. In <em>Infrastructure: Business and Communications</em> (pp. 43–49). Sofia: UNWE Press. <span class="lang">[in Bulgarian]</span></li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p>I teach at the Department of Media and Public Communications at UNWE. My aim in every course is to show students the direct link between theory and what happens in real newsrooms and media businesses. I draw on my own work as an editor, use real audience data as teaching material and bring students into practical projects.</p>
+
+    <p>Since 2018 I have taught more than 900 hours of lectures and seminars at UNWE.</p>
+
+    <h3>Current courses</h3>
+    <div class="rows">
+      <div class="row"><div class="when">Since 2022</div><div><strong>International Journalism</strong> (BA). Introduces students to foreign media markets and to how journalism works in different countries and media systems.</div></div>
+      <div class="row"><div class="when">Since 2024/25</div><div><strong>Media and Business</strong> (BA). A course I designed myself on media management and media economics: how media organisations build audiences, earn revenue and respond to technological change.</div></div>
+    </div>
+
+    <h3>Earlier teaching</h3>
+    <div class="rows">
+      <div class="row"><div class="when">2021–2023</div><div>New Media Production; Media Project Management (BA)</div></div>
+      <div class="row"><div class="when">2018–2019</div><div>Seminars in Fundamentals of Communication and Intercultural Communication</div></div>
+    </div>
+
+    <h3>Guest teaching</h3>
+    <div class="rows">
+      <div class="row"><div class="when">May 2026</div><div>Erasmus+ teaching mobility, National and Kapodistrian University of Athens. Lectures on AI in media, digital media management and platformisation, including "The Quality of the Media Landscape Under Pressure from Tech Giants"</div></div>
+    </div>
+
+    <h3>Supervision</h3>
+    <p>Supervisor of one MA thesis and reviewer of three MA theses at UNWE.</p>
+  </section>
+
+  <section id="media">
+    <h2>Media career</h2>
+    <p>My media career runs in parallel with my academic work and feeds directly into it. I have worked in business and financial journalism since 2008, most of that time in management roles, and the questions I study are ones I first met in the newsroom.</p>
+    <div class="rows">
+      <div class="row"><div class="when">2014–present</div><div><strong>Editor-in-Chief, <a href="https://money.bg">Money.bg</a></strong>. I have led the outlet through its digital transformation and its growth into one of Bulgaria's leading business media brands. I also organise and moderate the annual Money.bg personal finance event, which brings together around 300 participants and speakers from financial institutions and regulators.</div></div>
+      <div class="row"><div class="when">2020–present</div><div>Host and Producer, Bulgaria ON AIR. A weekly business and financial television programme that took the Money.bg brand from digital to national TV.</div></div>
+      <div class="row"><div class="when">2023</div><div>Content Manager (project-based), Altoo AG, Baar, Switzerland. Led a small international team producing content for a wealth management and fintech platform.</div></div>
+      <div class="row"><div class="when">2017–2020</div><div>Board Member, Web Media Group AD, Sofia</div></div>
+      <div class="row"><div class="when">2011–2013</div><div>Contributing Writer, Forbes Bulgaria and Banker Weekly, Sofia</div></div>
+      <div class="row"><div class="when">2012</div><div>Web Content Writer, Deutsche Welle, Bonn</div></div>
+      <div class="row"><div class="when">2010–2011</div><div>Business Editor, Bulgarisches Wirtschaftsblatt, Sofia</div></div>
+      <div class="row"><div class="when">2010</div><div>Editorial Intern, BILD and WeltN24, Berlin</div></div>
+      <div class="row"><div class="when">2008–2009</div><div>Trainee, then Business Reporter, Economedia (Capital), Sofia</div></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Academic</h3>
+    <div class="rows">
+      <div class="row"><div class="when">2023–present</div><div>Assistant Professor, Department of Media and Public Communications, UNWE</div></div>
+      <div class="row"><div class="when">2018–2023</div><div>Teaching Assistant, Lecturer and Guest Lecturer, UNWE</div></div>
+    </div>
+    <h3>Research projects</h3>
+    <div class="rows">
+      <div class="row"><div class="when">2019–2021</div><div>Team member, "Integrating Media Literacy Training Practices in Secondary and Higher Education in Bulgaria", UNWE. National survey of 534 teachers and expert interviews</div></div>
+      <div class="row"><div class="when">2020</div><div>Team member, "Introducing Professional Practices for In-House Media Video Production at UNWE", UNWE</div></div>
+      <div class="row"><div class="when">2017</div><div>Team member, "New Journalistic Practices in a Convergent Media Environment", UNWE</div></div>
+    </div>
+    <h3>Academic service</h3>
+    <div class="rows">
+      <div class="row"><div class="when">2027</div><div>Organising team, ECREA Journalism Studies Section Conference, UNWE, Sofia</div></div>
+    </div>
+    <h3>Scholarships and programmes</h3>
+    <div class="rows">
+      <div class="row"><div class="when">2023</div><div>North Star Foundation CEE Programme, FT Strategies and Google News Initiative, Bucharest</div></div>
+      <div class="row"><div class="when">2022</div><div>Central and Eastern European Journalists' Seminar, Sächsische Stiftung für Medienausbildung, Leipzig</div></div>
+      <div class="row"><div class="when">2022</div><div>ERMIScom Erasmus+ Intensive Programme, Bahçeşehir University, Istanbul</div></div>
+      <div class="row"><div class="when">2012–2013</div><div>International Parliamentary Scholarship, German Bundestag and Humboldt University of Berlin</div></div>
+      <div class="row"><div class="when">2009–2010</div><div>COPERNICUS Scholarship, Humboldt University of Berlin</div></div>
+    </div>
+    <h3>Education</h3>
+    <div class="rows">
+      <div class="row"><div class="when">2021</div><div>PhD in Media and Communications, UNWE. Dissertation: <em>Business Journalism in a Convergent Media Environment: New Forms and Technologies</em></div></div>
+      <div class="row"><div class="when">2015</div><div>MA in Political Management, Sofia University "St. Kliment Ohridski"</div></div>
+      <div class="row"><div class="when">2011</div><div>BA in Journalism and Media, UNWE</div></div>
+    </div>
+    <h3>Languages</h3>
+    <p>Bulgarian (native), German, English</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Department of Media and Public Communications<br>University of National and World Economy<br>Sofia, Bulgaria</p>
+    <p>I am happy to hear from colleagues interested in joint research, visiting stays or guest lectures.</p>
+    <p><a class="js-mail" data-show="1" href="#contact">gminev [at] unwe.bg</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">Last updated: November 2026</div>
+</footer>
+
+<script>
+  // Builds the email address in the browser so simple spam bots cannot read it from the page source.
+  (function () {
+    var addr = ['gminev', 'unwe.bg'].join('@');
+    document.querySelectorAll('.js-mail').forEach(function (a) {
+      a.href = 'mailto:' + addr;
+      if (a.dataset.show) a.textContent = addr;
+    });
+  })();
+</script>
+</body>
+</html>
